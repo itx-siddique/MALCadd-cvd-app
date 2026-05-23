@@ -340,6 +340,44 @@ st_html("""
         text-align: center;
         box-shadow: 0 4px 6px -1px rgba(30,58,138,0.06);
         margin-top: 1rem;
+        /* ── Number input +/- buttons fix ── */
+    section[data-testid="stSidebar"] button[data-testid="stNumberInputStepDown"],
+    section[data-testid="stSidebar"] button[data-testid="stNumberInputStepUp"] {
+        background-color: #EFF6FF !important;
+        color: #1D4ED8 !important;
+        border: 1px solid #BFDBFE !important;
+        border-radius: 6px !important;
+    }
+
+    section[data-testid="stSidebar"] button[data-testid="stNumberInputStepDown"]:hover,
+    section[data-testid="stSidebar"] button[data-testid="stNumberInputStepUp"]:hover {
+        background-color: #DBEAFE !important;
+        color: #1E3A8A !important;
+    }
+
+    /* ── Number input box itself ── */
+    section[data-testid="stSidebar"] input[type="number"] {
+        background-color: #F8FAFF !important;
+        color: #1E293B !important;
+        border: 1px solid #BFDBFE !important;
+        border-radius: 6px !important;
+    }
+
+    /* ── Reset Diagnostic secondary button ── */
+    section[data-testid="stSidebar"] button[kind="secondary"],
+    section[data-testid="stSidebar"] .stButton button[data-testid="baseButton-secondary"] {
+        background-color: #FEF2F2 !important;
+        color: #991B1B !important;
+        border: 1px solid #FECACA !important;
+        border-radius: 8px !important;
+    }
+
+    section[data-testid="stSidebar"] button[kind="secondary"]:hover,
+    section[data-testid="stSidebar"] .stButton button[data-testid="baseButton-secondary"]:hover {
+        background-color: #FEE2E2 !important;
+        color: #7F1D1D !important;
+        border-color: #FCA5A5 !important;
+    }
     }
 </style>
 """)
